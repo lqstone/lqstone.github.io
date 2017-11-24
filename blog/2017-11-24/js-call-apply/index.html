@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js," />
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="刘巧博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="刘巧">
-<meta property="og:url" content="https://lqstone.github.io/tags/Next/index.html">
+<meta name="description" content="call() 使用一个指定的this 值和若干个指定的参数值得前提下调用某个函数或方法">
+<meta name="keywords" content="js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript: call和apply的模拟实现">
+<meta property="og:url" content="https://lqstone.github.io/blog/2017-11-24/js-call-apply/index.html">
 <meta property="og:site_name" content="刘巧">
-<meta property="og:description" content="刘巧博客">
+<meta property="og:description" content="call() 使用一个指定的this 值和若干个指定的参数值得前提下调用某个函数或方法">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-24T08:05:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘巧">
-<meta name="twitter:description" content="刘巧博客">
+<meta name="twitter:title" content="javascript: call和apply的模拟实现">
+<meta name="twitter:description" content="call() 使用一个指定的this 值和若干个指定的参数值得前提下调用某个函数或方法">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://lqstone.github.io/tags/Next/"/>
+  <link rel="canonical" href="https://lqstone.github.io/blog/2017-11-24/js-call-apply/"/>
 
 
 
 
 
-  <title>标签: Next | 刘巧</title>
+  <title>javascript: call和apply的模拟实现 | 刘巧</title>
   
 
 
@@ -145,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,54 +251,211 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Next<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lqstone.github.io/blog/2017-11-24/js-call-apply/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘巧">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/apple-touch-icon-next.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="刘巧">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/blog/2017-11-02/next-personal-setting/" itemprop="url">
-              
-                <span itemprop="name">NexT主题个性化设置</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">javascript: call和apply的模拟实现</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-02T19:50:04+08:00"
-              content="2017-11-02" >
-          11-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-24T00:00:00+08:00">
+                2017-11-24
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/blog/2017-11-24/js-call-apply/" class="leancloud_visitors" data-flag-title="javascript: call和apply的模拟实现">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>call() 使用一个指定的this 值和若干个指定的参数值得前提下调用某个函数或方法</p>
+</blockquote>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>技术分享 有偿打赏</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wepay.jpg" alt="刘巧 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="刘巧 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2017-11-02/next-personal-setting/" rel="next" title="NexT主题个性化设置">
+                <i class="fa fa-chevron-left"></i> NexT主题个性化设置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -304,6 +463,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -557,6 +720,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
